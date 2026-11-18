@@ -4,8 +4,11 @@ nome = input("Nome: ")
 idade = int(input("Idade: "))
 
 if idade >= 18:
-    validacao = "Maior de idade"
+    print("Maior de idade")
+    print("Pode tirar careira")
 else:
-    validacao = "Menor de idade"
+    print("Menor de idade")
+    faltam = 18 - idade
+    print(f"Faltam {faltam} ano(s) paa completar 18.")
 
-print(f"{nome} é {validacao}")
+    
